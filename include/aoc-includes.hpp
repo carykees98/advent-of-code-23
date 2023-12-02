@@ -8,6 +8,8 @@
 #include <optional>
 #include <ranges>
 #include <string>
+#include <sstream>
+#include <vector>
 
 #include "./readInput.hpp"
 #include "./solutionPrototypes.hpp"
