@@ -15,19 +15,6 @@ int main(int argc, char const *argv[])
 
 namespace aoc
 {
-	std::vector<std::string> split(std::string toSplit, char delimiter)
-	{
-		std::vector<std::string> tokens;
-		std::istringstream toSplitStream(toSplit);
-		std::string currentToken;
-
-		while (std::getline(toSplitStream, currentToken, delimiter))
-		{
-			tokens.push_back(currentToken);
-		}
-
-		return tokens;
-	}
 
 	int64_t part1(const std::string &input)
 	{
@@ -113,13 +100,12 @@ namespace aoc
 					}
 				}
 			}
-			unsigned long long power = maxBlue * maxGreen * maxRed;
+			int64_t power = maxBlue * maxGreen * maxRed;
 			maxBlue = 0;
 			maxGreen = 0;
 			maxRed = 0;
 
 			answer2 += power;
-			std::cout << i + 1 << " " << power << std::endl;
 		}
 
 		return answer2;
