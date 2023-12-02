@@ -11,5 +11,5 @@
 #include <sstream>
 #include <vector>
 
-#include "./readInput.hpp"
+#include "./utilities.hpp"
 #include "./solutionPrototypes.hpp"
